@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2075C12-E941-4F2B-990F-0E375A176F32}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TradingSystemExe</RootNamespace>
+    <AssemblyName>TradingSystemExe</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TradingSystem">
+      <HintPath>..\..\TradingSystem\bin\Debug\TradingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Algorithm">
+      <HintPath>..\..\Algorithm\bin\Debug\Algorithm.dll</HintPath>
+    </Reference>
+    <Reference Include="Sender">
+      <HintPath>..\..\Sender\bin\Debug\Sender.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\References\Selenium\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\..\References\Selenium\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\..\References\Selenium\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\References\Selenium\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="finamLib">
+      <HintPath>..\..\finamLib\bin\Debug\finamLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
