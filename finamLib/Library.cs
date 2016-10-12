@@ -31,6 +31,14 @@ namespace finamLib {
 			this.WebDriver = new FirefoxDriver(this.SetProfileForDownloads());
 		}
 
+		public finamCrawler(string DownloadPath) {
+
+			this.DownloadPath = DownloadPath;
+
+			this.WebDriver = new FirefoxDriver(this.SetProfileForDownloads());
+
+		}
+
 		public FirefoxProfile SetProfileForDownloads() {
 
 			FirefoxProfile firefoxProfile = new FirefoxProfile();
@@ -45,7 +53,8 @@ namespace finamLib {
 
 		}
 
-		public void Crawl(string instrumentType, string instrumentName, string beginningdate, string enddate, string periodocity, string format) {
+
+		public void Crawl(string instrumentType, string instrumentName, string beginningdate, string enddate, string periodocity, string format, string filename) {
 
 			this.WebDriver.Url = "http://www.finam.ru/profile/akcii-usa-bats/microsoft-corp/export/";
 			this.WebDriver.Navigate();
@@ -55,6 +64,7 @@ namespace finamLib {
 			this.ChooseAnInstrument (instrumentName);
 			this.ChooseAnInterval (beginningdate, enddate);
 			this.ChooseAPeriod (periodocity);
+			this.ChangeFileName(filename);
 			this.ChooseAFormat (format);
 
 			this.Download ();
@@ -177,6 +187,18 @@ namespace finamLib {
 			IWebElement datatype = WebDriver.FindElement(By.XPath (xpath));
 
 			datatype.Click ();
+		}
+
+		public void ChangeFileName(string filename) {
+
+			IWebElement filenameCell = WebDriver.FindElement (By.Id ("issuer-profile-export-file-name"));
+
+			filenameCell.SendKeys(Keys.Control + "a");;
+
+			filenameCell.SendKeys (Keys.Delete);
+
+			filenameCell.SendKeys (filename);
+
 		}
 
 		public void Download(){

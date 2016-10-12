@@ -10,14 +10,6 @@ namespace Algorithm {
 
 	public class FileAlgorithm : IfileAlgorithm {
 
-		public string DataFileName;
-
-		public FileAlgorithm (string DataFileName) {
-
-			this.DataFileName = DataFileName;
-
-		}
-
 		public string run() {
 
 			string x = "some simle algorithm that returns string";
