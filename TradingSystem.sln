@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "finamLib", "finamLib\finamLib.csproj", "{9053953A-1265-4224-977C-88A33234FD77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBconnectorLib", "DBconnectorLib\DBconnectorLib.csproj", "{5FE0BEAB-AF3B-4099-B482-43DC975042C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,6 +27,10 @@ Global
 		{0E828148-621F-4B3F-ABE9-60F0B45D2696}.Debug|x86.Build.0 = Debug|x86
 		{0E828148-621F-4B3F-ABE9-60F0B45D2696}.Release|x86.ActiveCfg = Release|x86
 		{0E828148-621F-4B3F-ABE9-60F0B45D2696}.Release|x86.Build.0 = Release|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Debug|x86.ActiveCfg = Debug|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Debug|x86.Build.0 = Debug|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Release|x86.ActiveCfg = Release|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Release|x86.Build.0 = Release|x86
 		{9053953A-1265-4224-977C-88A33234FD77}.Debug|x86.ActiveCfg = Debug|x86
 		{9053953A-1265-4224-977C-88A33234FD77}.Debug|x86.Build.0 = Debug|x86
 		{9053953A-1265-4224-977C-88A33234FD77}.Release|x86.ActiveCfg = Release|x86

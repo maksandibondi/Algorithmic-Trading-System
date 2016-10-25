@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBconnectorLib", "DBconnectorLib.csproj", "{5FE0BEAB-AF3B-4099-B482-43DC975042C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{4F069C7A-2415-42B4-8234-43E55C395B6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F069C7A-2415-42B4-8234-43E55C395B6C}.Debug|x86.ActiveCfg = Debug|x86
+		{4F069C7A-2415-42B4-8234-43E55C395B6C}.Debug|x86.Build.0 = Debug|x86
+		{4F069C7A-2415-42B4-8234-43E55C395B6C}.Release|x86.ActiveCfg = Release|x86
+		{4F069C7A-2415-42B4-8234-43E55C395B6C}.Release|x86.Build.0 = Release|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Debug|x86.ActiveCfg = Debug|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Debug|x86.Build.0 = Debug|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Release|x86.ActiveCfg = Release|x86
+		{5FE0BEAB-AF3B-4099-B482-43DC975042C1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DBconnectorLib.csproj
+	EndGlobalSection
+EndGlobal

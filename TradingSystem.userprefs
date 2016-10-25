@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TradingSystemExe/TradingSystemExe/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DBconnectorLib/DBconnector.cs">
     <Files>
-      <File FileName="TradingSystemExe/TradingSystemExe/Main.cs" Line="33" Column="40" />
+      <File FileName="DBconnectorLib/DBconnector.cs" Line="39" Column="127" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

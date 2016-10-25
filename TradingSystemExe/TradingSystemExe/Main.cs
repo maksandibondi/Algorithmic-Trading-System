@@ -23,6 +23,8 @@ class MainClass {
 
 		crawler.Crawl ("ETF", "Canada Index", "01/11/2011", "09/10/2015", "тики", "csv", "file");
 
+
+
 		// thread 2
 
 		Isender sender = new AMQSender ("localhost");
@@ -35,6 +37,8 @@ class MainClass {
 		Subscriber sub1 = new Subscriber (sender);
 
 		pub.newTransaction += sub1.OnreceiveNewTransactionNotif;
+
+
 
 
 		// thread 3

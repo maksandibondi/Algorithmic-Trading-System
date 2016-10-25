@@ -4,7 +4,9 @@ namespace Sender {
 
 	public interface Isender {
 
-		void send(string obj);
+		void setMessage(string message);
+
+		void send();
 
 	}
 
@@ -12,13 +14,21 @@ namespace Sender {
 
 		private string queue;
 
+		private string message;
+
 		public AMQSender (string queue) {
 
 			this.queue = queue;
 
 		}
 
-		public void send (string obj) {
+		public void setMessage(string message){
+
+			this.message = message;
+
+		}
+
+		public void send () {
 
 			//simple implementation of sending an object to activemq queue
 
